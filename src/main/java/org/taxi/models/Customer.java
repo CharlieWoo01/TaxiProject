@@ -34,4 +34,13 @@ public class Customer {
     public void setCardDetails(CardDetails cardDetails) {
         this.cardDetails = cardDetails;
     }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "name='" + name + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", cardDetails=" + cardDetails +
+                '}';
+    }
 }

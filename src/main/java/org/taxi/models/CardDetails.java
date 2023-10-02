@@ -6,20 +6,12 @@ public class CardDetails {
 
     private String cardExpiryDate;
 
-    private String cardholderName;
+    private String cvvCode;
 
-    public CardDetails(String cardNumber, String cardExpiryDate, String cardholderName) {
+    public CardDetails(String cardNumber, String cardExpiryDate, String cvvCode) {
         this.cardNumber = cardNumber;
         this.cardExpiryDate = cardExpiryDate;
-        this.cardholderName = cardholderName;
-    }
-
-    public String getCardholderName() {
-        return cardholderName;
-    }
-
-    public void setCardholderName(String cardholderName) {
-        this.cardholderName = cardholderName;
+        this.cvvCode = cvvCode;
     }
 
     public String getCardNumber() {
@@ -36,5 +28,22 @@ public class CardDetails {
 
     public void setCardExpiryDate(String cardExpiryDate) {
         this.cardExpiryDate = cardExpiryDate;
+    }
+
+    public String getCvvCode() {
+        return cvvCode;
+    }
+
+    public void setCvvCode(String cvvCode) {
+        this.cvvCode = cvvCode;
+    }
+
+    @Override
+    public String toString() {
+        return "CardDetails{" +
+                "cardNumber='" + cardNumber + '\'' +
+                ", cardExpiryDate='" + cardExpiryDate + '\'' +
+                ", cvvCode='" + cvvCode + '\'' +
+                '}';
     }
 }
