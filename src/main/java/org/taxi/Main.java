@@ -5,7 +5,7 @@ import org.taxi.models.Journey;
 import org.taxi.services.CustomerService;
 import org.taxi.services.impl.CustomerServiceImpl;
 import org.taxi.services.impl.FareCalculatorServiceImpl;
-import org.taxi.services.impl.JourneyService;
+import org.taxi.services.JourneyService;
 import org.taxi.services.impl.JourneyServiceImpl;
 import org.taxi.utils.Utils;
 

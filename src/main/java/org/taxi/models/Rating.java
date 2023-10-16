@@ -1,14 +1,15 @@
 package org.taxi.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Rating {
     private double averageRating;
     private List<Double> ratings;
 
-    public Rating(double averageRating, List<Double> ratings) {
-        this.averageRating = averageRating;
-        this.ratings = ratings;
+    public Rating() {
+        this.averageRating = 0.0;
+        this.ratings = new ArrayList<>();
     }
 
     public double getAverageRating() {

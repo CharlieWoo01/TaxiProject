@@ -4,12 +4,14 @@ import org.taxi.models.Customer;
 import org.taxi.models.Journey;
 import org.taxi.models.JourneyHistory;
 import org.taxi.services.FareCalculatorService;
+import org.taxi.services.JourneyService;
+
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class JourneyServiceImpl implements JourneyService{
+public class JourneyServiceImpl implements JourneyService {
 
     private FareCalculatorService fareCalculator;
 

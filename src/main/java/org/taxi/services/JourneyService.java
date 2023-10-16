@@ -1,4 +1,4 @@
-package org.taxi.services.impl;
+package org.taxi.services;
 
 import org.taxi.models.Customer;
 import org.taxi.models.Journey;

@@ -4,7 +4,6 @@ import org.taxi.models.CardDetails;
 import org.taxi.models.Customer;
 import org.taxi.services.CustomerService;
 import org.taxi.utils.Utils;
-
 import java.util.Scanner;
 
 public class CustomerServiceImpl implements CustomerService {
