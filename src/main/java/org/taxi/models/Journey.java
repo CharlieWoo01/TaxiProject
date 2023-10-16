@@ -12,8 +12,10 @@ public class Journey {
     private LocalDateTime startTime;
     private LocalDateTime endTime;
 
+    private int numOfPassengers;
+
     public Journey(Driver driver, Customer customer, double distance, double cost, String startLocation,
-                   String endLocation, LocalDateTime startTime, LocalDateTime endTime) {
+                   String endLocation, LocalDateTime startTime, LocalDateTime endTime, int numOfPassengers) {
         this.driver = driver;
         this.customer = customer;
         this.distance = distance;
@@ -22,6 +24,7 @@ public class Journey {
         this.endLocation = endLocation;
         this.startTime = startTime;
         this.endTime = endTime;
+        this.numOfPassengers = numOfPassengers;
     }
 
     public Driver getDriver() {
@@ -86,5 +89,28 @@ public class Journey {
 
     public void setEndTime(LocalDateTime endTime) {
         this.endTime = endTime;
+    }
+
+    public int getNumOfPassengers() {
+        return numOfPassengers;
+    }
+
+    public void setNumOfPassengers(int numOfPassengers) {
+        this.numOfPassengers = numOfPassengers;
+    }
+
+    @Override
+    public String toString() {
+        return "Journey{" +
+                "driver=" + driver +
+                ", customer=" + customer +
+                ", distance=" + distance +
+                ", cost=" + cost +
+                ", startLocation='" + startLocation + '\'' +
+                ", endLocation='" + endLocation + '\'' +
+                ", startTime=" + startTime +
+                ", endTime=" + endTime +
+                ", numOfPassengers=" + numOfPassengers +
+                '}';
     }
 }
