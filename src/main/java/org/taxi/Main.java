@@ -2,12 +2,13 @@ package org.taxi;
 
 import org.taxi.models.Customer;
 import org.taxi.services.CustomerService;
+import org.taxi.services.impl.CustomerServiceImpl;
 import org.taxi.utils.Utils;
 
 public class Main {
     public static void main(String[] args) {
         Utils util = new Utils();
-        CustomerService customerService = new CustomerService(util);
+        CustomerService customerService = new CustomerServiceImpl(util);
 
         Customer registeredCustomer = customerService.registerCustomer();
 
