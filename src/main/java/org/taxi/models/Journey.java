@@ -3,8 +3,8 @@ package org.taxi.models;
 import java.time.LocalDateTime;
 
 public class Journey {
-    private String driverName;
-    private String customerName;
+    private Driver driver;
+    private Customer customer;
     private double distance;
     private double cost;
     private String startLocation;
@@ -12,10 +12,10 @@ public class Journey {
     private LocalDateTime startTime;
     private LocalDateTime endTime;
 
-    public Journey(String driverName, String customerName, double distance, double cost, String startLocation,
+    public Journey(Driver driver, Customer customer, double distance, double cost, String startLocation,
                    String endLocation, LocalDateTime startTime, LocalDateTime endTime) {
-        this.driverName = driverName;
-        this.customerName = customerName;
+        this.driver = driver;
+        this.customer = customer;
         this.distance = distance;
         this.cost = cost;
         this.startLocation = startLocation;
@@ -24,20 +24,20 @@ public class Journey {
         this.endTime = endTime;
     }
 
-    public String getDriverName() {
-        return driverName;
+    public Driver getDriver() {
+        return driver;
     }
 
-    public void setDriverName(String driverName) {
-        this.driverName = driverName;
+    public void setDriver(Driver driver) {
+        this.driver = driver;
     }
 
-    public String getCustomerName() {
-        return customerName;
+    public Customer getCustomer() {
+        return customer;
     }
 
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 
     public double getDistance() {
